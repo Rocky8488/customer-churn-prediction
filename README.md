@@ -7,13 +7,16 @@ This repository contains two machine learning projects that use an Artificial Ne
 Classification.ipynb: Customer Churn Prediction
 
 Project Description: This notebook details the process of building an ANN model to predict customer churn. It takes customer information, such as credit score, age, and location, and classifies whether a customer will exit the bank or not.
+
 Dataset: The model is trained on the `Churn_Modelling.csv` dataset.
+
 Technologies:
     Python
     Pandas
     Numpy
     Scikit-learn
     TensorFlow/Keras
+
 Methodology:
     1.  Data Preprocessing: The notebook handles categorical features like 'Gender' and 'Geography' using `LabelEncoder` and `OneHotEncoder`, respectively. The `RowNumber`, `CustomerId`, and `Surname` columns are dropped as they are not relevant to the prediction. The data is then scaled using `StandardScaler` to ensure all features contribute equally to the model.
     2.  Model Architecture: A sequential ANN model is built with two dense hidden layers using 'relu' activation and a final output layer with a 'sigmoid' activation for binary classification.
